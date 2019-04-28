@@ -17,7 +17,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 error_reporting(E_ALL & ~E_NOTICE);
-require_once 'src/pengakar.php';
+require_once 'src/Pengakar.php';
 
 // Parameters
 $pengakar = new \Kateglo\Pengakar();

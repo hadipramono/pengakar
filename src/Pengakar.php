@@ -408,7 +408,7 @@ class Pengakar
                 $new_affix .= $matches[$affix_index];
                 $new_affix .= $is_suffix ? '' : '-';
                 $new_affix = array($new_affix); // make array
-                if (is_array($attrib['affixes'])) { // merge
+                if (isset($attrib['affixes']) && is_array($attrib['affixes'])) { // merge
                     $new_affix = array_merge($attrib['affixes'], $new_affix);
                 }
 
